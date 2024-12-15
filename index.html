@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/containers_and_frames.css">
 
 </head>
 <body>
@@ -17,14 +18,21 @@
         </video>
     </div>
     <div class="container">
-        <div class="container__left">
-            <div class="score_box"></div>
-            <div class="menu_avatar"></div>
-            <div class="card_details"></div>
+        <div class="container__left framed-golden-2">
+            <div class="score_box frame">
+                <span id="score_points">Win : 0 | Lose: 0</span>
+            </div>
+            <div class="menu_avatar">
+                <img id="card-image">
+            </div>
+            <div class="card_details frame">
+                <p id="card-name">mostre</p>
+                <p id="card-type">mostre</p>
+            </div>
         </div>
         <div class="container__right">
             <div class="card-box__ccontainer">
-                
+
             </div>
         </div>
     </div>
