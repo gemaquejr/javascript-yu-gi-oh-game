@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="stylesheet" href="./src/css/containers_and_frames.css">
+    <link rel="stylesheet" href="./src/css/buttons.css">
 
 </head>
 <body>
@@ -31,8 +32,30 @@
             </div>
         </div>
         <div class="container__right">
-            <div class="card-box__ccontainer">
+            <div class="card-box__container">
+                <div class="card-box framed" id="computer-cards"></div>
+                <div class="card-versus">
+                    <div class="versus-top">
+                        <div class="card-infield">
+                            <img id="player-field-card"
+                            height="180px"
+                            width="125px">
+                        </div>
 
+                        <img height="100px" src="./src/assets/icons/millenium2.png">
+                        
+                        <div class="card-infield">
+                            <img id="computer-field-card"
+                            height="180px"
+                            width="125px">
+                        </div>
+                    </div>
+                    <div class="versus-bottom">
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU</button>
+                    </div>
+                </div>
+
+                <div class="card-box framed" id="player-cards"></div>
             </div>
         </div>
     </div>
